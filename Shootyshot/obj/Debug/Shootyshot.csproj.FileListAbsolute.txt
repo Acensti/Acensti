@@ -1,0 +1,11 @@
+C:\Users\kunge\source\repos\Shootyshot\bin\Debug\Shootyshot.exe.config
+C:\Users\kunge\source\repos\Shootyshot\bin\Debug\Shootyshot.exe
+C:\Users\kunge\source\repos\Shootyshot\bin\Debug\Shootyshot.pdb
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.csproj.AssemblyReference.cache
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.csproj.SuggestedBindingRedirects.cache
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.Form1.resources
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.Properties.Resources.resources
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.csproj.GenerateResource.cache
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.csproj.CoreCompileInputs.cache
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.exe
+C:\Users\kunge\source\repos\Shootyshot\obj\Debug\Shootyshot.pdb
