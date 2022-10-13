@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
+
 namespace Shootyshot
 {
     public partial class Form1 : Form
     {
+       public Character userChar;
         public enum Action
         {
             Reload,
@@ -45,6 +47,7 @@ namespace Shootyshot
             Action UserAction = Action.Shoot;
             Action AIAction = AiActions();
             OngoingActions(AIAction, UserAction);
+            userChar.Shot();
         }
 
         private void OngoingActions(Action AiChoices, Action PlayerAction)
@@ -85,9 +88,8 @@ namespace Shootyshot
 
         private void btnShotgun_Click(object sender, EventArgs e)
         {
-            MessageBox.Box("You have dumpstered shitter");
-            Action UserAction = Action.Shotgun;
-            Action AIAction = AiActions();
+            // MessageBox.Box("You have dumpstered shitter");
+            userChar.Reload();
             OngoingActions(AIAction, UserAction);
         }
 
@@ -107,64 +109,9 @@ namespace Shootyshot
 
         private void btnReload_Click(object sender, EventArgs e)
         {
-            UserAmmo++;
-            if (UserAmmo >= 1)
-            {
-                btnShot.Enabled = true;
-            }
-
-            if (UserAmmo >= 3)
-            {
-                btnShotgun.Enabled = true;
-            }
-            Action UserAction = Action.Reload;
-            Action AIAction = AiActions();
-            OngoingActions(AIAction, UserAction);
-        }
-
-        public Action AiActions() //Mechanical choices the ai commits
-        {
-            if (AIAmmo == 3)
-            {
-                return Action.Shotgun;
-            }
-            else if (AIAmmo == 0)
-            {
-                Random rnd = new Random();
-                int number = rnd.Next(1, 2);
-                switch (number)
-                {
-                    case 1:
-                        AIAmmo++;
-                        return Action.Reload;
-                    case 2:
-                        return Action.Block;
-                }
-                return Action.Block;
-
-
-            }
-            else 
-            {
-                Random rnd = new Random();
-                int number = rnd.Next(1, 3);
-                switch (number)
-                {
-                    case 1:
-                        AIAmmo++;
-                        return Action.Reload;
-                    case 2:
-                        return Action.Block;
-                    case 3:
-                        AIAmmo--;
-                        return Action.Shoot;
-                }
-
-                return Action.Block;
-            }
-
-
+            userChar.Reload();
 
         }
+
     }
 }
