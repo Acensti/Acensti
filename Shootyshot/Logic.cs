@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 
 namespace Shootyshot
 {
     public class Logic
     {
-        public enum Action
+        public enum Actions
         {
             Reload,
             Shoot,
@@ -16,23 +18,68 @@ namespace Shootyshot
             Shotgun,
         }
 
-        private void OngoingActions(Action AiChoices, Action PlayerAction)
+        public enum Winner
+        {
+            Player,
+            Ai,
+            None,
+        }
+
+
+        public static Winner OngoingActions(Actions AiChoices, Actions PlayerAction)
         {
 
-            if (AiChoices == Action.Shotgun)
+
+            if (PlayerAction == Actions.Shotgun)
             {
-                //Game over
+                return Winner.Player;
+            }
+          
+            if (AiChoices == Actions.Shotgun)
+            {
+                return Winner.Ai;
+
+            }
+            if (PlayerAction == Actions.Shotgun && AiChoices == Actions.Shoot)
+            {
+                return Winner.Player;
             }
 
-            if (PlayerAction == Action.Shoot && AiChoices != Action.Block)
+            if (PlayerAction == Actions.Shoot && AiChoices != Actions.Block)
             {
-                // Player win
+                return Winner.Player;
             }
 
-            if (PlayerAction != Action.Block && AiChoices == Action.Shoot)
+            if (PlayerAction != Actions.Block && AiChoices == Actions.Shoot)
             {
-                //
+                return Winner.Ai;
             }
+           
+            
+         
+            return Winner.None;
+
+
+        }
+
+        public static void Endgame(Winner winner)
+        {
+
+             if (winner == Winner.Player)
+            {
+                MessageBox.Show("You won");
+            }
+           else if (winner == Winner.Ai)
+            {
+                MessageBox.Show("You lost :c");
+            }
+           else
+            {
+                MessageBox.Show("none won :c");
+
+            }
+
+
 
 
         }

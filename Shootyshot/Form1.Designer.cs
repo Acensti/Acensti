@@ -36,11 +36,11 @@
             this.LabelAI = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GameView = new System.Windows.Forms.ListBox();
-            this.textBoxAmmoPlayer = new System.Windows.Forms.TextBox();
-            this.textBoxPlayerAction = new System.Windows.Forms.TextBox();
             this.textBoxAmmoComputer = new System.Windows.Forms.TextBox();
             this.textBoxCompAction = new System.Windows.Forms.TextBox();
             this.btnReload = new System.Windows.Forms.Button();
+            this.txtPAmmo = new System.Windows.Forms.TextBox();
+            this.txtPAction = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -76,15 +76,17 @@
             this.btnShotgun.TabIndex = 3;
             this.btnShotgun.Text = "Shotgun";
             this.btnShotgun.UseVisualStyleBackColor = true;
+            this.btnShotgun.Click += new System.EventHandler(this.btnShotgun_Click_1);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(18, 74);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 133);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PlayerLabel
             // 
@@ -93,7 +95,7 @@
             this.PlayerLabel.Location = new System.Drawing.Point(91, 46);
             this.PlayerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PlayerLabel.Name = "PlayerLabel";
-            this.PlayerLabel.Size = new System.Drawing.Size(38, 18);
+            this.PlayerLabel.Size = new System.Drawing.Size(49, 24);
             this.PlayerLabel.TabIndex = 7;
             this.PlayerLabel.Text = "allan";
             // 
@@ -104,13 +106,13 @@
             this.LabelAI.Location = new System.Drawing.Point(947, 46);
             this.LabelAI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelAI.Name = "LabelAI";
-            this.LabelAI.Size = new System.Drawing.Size(20, 18);
+            this.LabelAI.Size = new System.Drawing.Size(27, 24);
             this.LabelAI.TabIndex = 8;
             this.LabelAI.Text = "Ai";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(950, 68);
+            this.pictureBox2.Location = new System.Drawing.Point(964, 74);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(177, 133);
@@ -120,40 +122,25 @@
             // GameView
             // 
             this.GameView.FormattingEnabled = true;
-            this.GameView.ItemHeight = 18;
-            this.GameView.Location = new System.Drawing.Point(323, 248);
+            this.GameView.ItemHeight = 24;
+            this.GameView.Location = new System.Drawing.Point(313, 228);
             this.GameView.Name = "GameView";
-            this.GameView.Size = new System.Drawing.Size(620, 256);
+            this.GameView.Size = new System.Drawing.Size(620, 244);
             this.GameView.TabIndex = 10;
             this.GameView.SelectedIndexChanged += new System.EventHandler(this.GameView_SelectedIndexChanged);
-            // 
-            // textBoxAmmoPlayer
-            // 
-            this.textBoxAmmoPlayer.Location = new System.Drawing.Point(215, 124);
-            this.textBoxAmmoPlayer.Name = "textBoxAmmoPlayer";
-            this.textBoxAmmoPlayer.Size = new System.Drawing.Size(100, 24);
-            this.textBoxAmmoPlayer.TabIndex = 11;
-            // 
-            // textBoxPlayerAction
-            // 
-            this.textBoxPlayerAction.Location = new System.Drawing.Point(215, 94);
-            this.textBoxPlayerAction.Name = "textBoxPlayerAction";
-            this.textBoxPlayerAction.Size = new System.Drawing.Size(100, 24);
-            this.textBoxPlayerAction.TabIndex = 11;
-            this.textBoxPlayerAction.TextChanged += new System.EventHandler(this.textBoxPlayerAction_TextChanged);
             // 
             // textBoxAmmoComputer
             // 
             this.textBoxAmmoComputer.Location = new System.Drawing.Point(843, 134);
             this.textBoxAmmoComputer.Name = "textBoxAmmoComputer";
-            this.textBoxAmmoComputer.Size = new System.Drawing.Size(100, 24);
+            this.textBoxAmmoComputer.Size = new System.Drawing.Size(100, 29);
             this.textBoxAmmoComputer.TabIndex = 12;
             // 
             // textBoxCompAction
             // 
             this.textBoxCompAction.Location = new System.Drawing.Point(843, 94);
             this.textBoxCompAction.Name = "textBoxCompAction";
-            this.textBoxCompAction.Size = new System.Drawing.Size(100, 24);
+            this.textBoxCompAction.Size = new System.Drawing.Size(100, 29);
             this.textBoxCompAction.TabIndex = 13;
             // 
             // btnReload
@@ -167,16 +154,32 @@
             this.btnReload.UseVisualStyleBackColor = true;
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
+            // txtPAmmo
+            // 
+            this.txtPAmmo.Location = new System.Drawing.Point(215, 154);
+            this.txtPAmmo.Name = "txtPAmmo";
+            this.txtPAmmo.Size = new System.Drawing.Size(100, 29);
+            this.txtPAmmo.TabIndex = 11;
+            this.txtPAmmo.TextChanged += new System.EventHandler(this.txtPAmmo_TextChanged);
+            // 
+            // txtPAction
+            // 
+            this.txtPAction.Location = new System.Drawing.Point(215, 94);
+            this.txtPAction.Name = "txtPAction";
+            this.txtPAction.Size = new System.Drawing.Size(100, 29);
+            this.txtPAction.TabIndex = 11;
+            this.txtPAction.TextChanged += new System.EventHandler(this.textBoxPlayerAction_TextChanged);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 623);
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.textBoxAmmoComputer);
             this.Controls.Add(this.textBoxCompAction);
-            this.Controls.Add(this.textBoxPlayerAction);
-            this.Controls.Add(this.textBoxAmmoPlayer);
+            this.Controls.Add(this.txtPAction);
+            this.Controls.Add(this.txtPAmmo);
             this.Controls.Add(this.GameView);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.LabelAI);
@@ -207,11 +210,11 @@
         private System.Windows.Forms.Label LabelAI;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ListBox GameView;
-        private System.Windows.Forms.TextBox textBoxAmmoPlayer;
-        private System.Windows.Forms.TextBox textBoxPlayerAction;
         private System.Windows.Forms.TextBox textBoxAmmoComputer;
         private System.Windows.Forms.TextBox textBoxCompAction;
         private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.TextBox txtPAmmo;
+        private System.Windows.Forms.TextBox txtPAction;
     }
 }
 

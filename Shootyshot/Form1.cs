@@ -8,6 +8,9 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Shootyshot.Logic;
+using static Shootyshot.Character;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 
@@ -16,13 +19,9 @@ namespace Shootyshot
     public partial class Form1 : Form
     {
        public Character userChar;
-        public enum Action
-        {
-            Reload,
-            Shoot,
-            Block,
-            Shotgun,
-        }
+       public Ai ai = new Ai();
+
+
 
         private int AIAmmo = 0;
         private int UserAmmo = 0;
@@ -30,50 +29,31 @@ namespace Shootyshot
         public Form1()
         {
             InitializeComponent();
+            txtPAmmo.Text = UserAmmo.ToString();
+            textBoxAmmoComputer.Text = AIAmmo.ToString();
         }
 
         private void btnShot_Click(object sender, EventArgs e)
         {
-            UserAmmo--;
-            if (UserAmmo < 1)
-            {
-                btnShot.Enabled = false;
-            }
-
-            if (UserAmmo < 3)
-            {
-                btnShotgun.Enabled = false;
-            }
-            Action UserAction = Action.Shoot;
-            Action AIAction = AiActions();
-            OngoingActions(AIAction, UserAction);
-            userChar.Shot();
+            Actions userAction = Actions.Shoot;
+            Actions aiAction = ai.AiActions();
+            Winner winner = Logic.OngoingActions(userAction, aiAction);
+            Endgame(winner);
         }
+       
 
-        private void OngoingActions(Action AiChoices, Action PlayerAction)
-        {
-
-            if (AiChoices == Action.Shotgun)
-            {
-                //Game over
-            }
-
-            if (PlayerAction == Action.Shoot && AiChoices != Action.Block)
-            {
-                // Player win
-            }
-
-            if (PlayerAction != Action.Block && AiChoices == Action.Shoot)
-            {
-                //
-            }
-
-           
-        }
-
+ 
         private void Form1_Load(object sender, EventArgs e)
         {
             // Disables shoot and shotgun
+
+        }
+
+        public void round()
+        {
+            txtPAmmo.Text = UserAmmo.ToString();
+            txtPAction.Text = CurrentAction.ToString();
+
 
         }
 
@@ -81,16 +61,16 @@ namespace Shootyshot
 
         private void btnBlock_Click(object sender, EventArgs e)
         {
-            Action UserAction = Action.Block;
-            Action AIAction = AiActions();
-            OngoingActions(AIAction, UserAction);
+            Actions userAction = Actions.Block;
+            Actions aiAction = ai.AiActions();
+            Winner winner = Logic.OngoingActions(userAction, aiAction);
+            Endgame(winner);
         }
 
         private void btnShotgun_Click(object sender, EventArgs e)
         {
             // MessageBox.Box("You have dumpstered shitter");
             userChar.Reload();
-            OngoingActions(AIAction, UserAction);
         }
 
        
@@ -109,9 +89,33 @@ namespace Shootyshot
 
         private void btnReload_Click(object sender, EventArgs e)
         {
-            userChar.Reload();
+            Actions userAction = Actions.Reload;
+            Actions aiAction = ai.AiActions();
+            Winner winner = Logic.OngoingActions(userAction, aiAction);
+            Endgame(winner);
+
+            
+
+        }
+        
+       
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
 
+        private void btnShotgun_Click_1(object sender, EventArgs e)
+        {
+            Actions userAction = Actions.Shotgun;
+            Actions aiAction = ai.AiActions();
+            Winner winner = Logic.OngoingActions(userAction, aiAction);
+            Endgame(winner);
+        }
+
+        private void txtPAmmo_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

@@ -3,30 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using static Shootyshot.Logic;
 namespace Shootyshot
 {
     public class Ai
     {
-        public enum Action
+       
+        public Ai()
         {
-            Reload,
-            Shoot,
-            Block,
-            Shotgun,
-        }
-        public AI()
-        {
-            character = new Character();
+            character = new Character();    
         }
         public Character character;
         public int AIAmmo = 0;
        
-        public Action AiActions() //Mechanical choices the ai commits
+        public Actions AiActions() //Mechanical choices the ai commits
         {
             if (AIAmmo == 3)
             {
-                return Action.Shotgun;
+                return Actions.Shotgun;
             }
             else if (AIAmmo == 0)
             {
@@ -36,11 +30,11 @@ namespace Shootyshot
                 {
                     case 1:
                         AIAmmo++;
-                        return Action.Reload;
+                        return Actions.Reload;
                     case 2:
-                        return Action.Block;
+                        return Actions.Block;
                 }
-                return Action.Block;
+                return Actions.Block;
 
 
             }
@@ -52,15 +46,15 @@ namespace Shootyshot
                 {
                     case 1:
                         AIAmmo++;
-                        return Action.Reload;
+                        return Actions.Reload;
                     case 2:
-                        return Action.Block;
+                        return Actions.Block;
                     case 3:
                         AIAmmo--;
-                        return Action.Shoot;
+                        return Actions.Shoot;
                 }
 
-                return Action.Block;
+                return Actions.Block;
             }
 
 

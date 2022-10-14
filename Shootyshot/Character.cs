@@ -3,45 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using static Shootyshot.Logic;
 namespace Shootyshot
 {
     public class Character
     {
-         public enum Action
-        {
-            Reload,
-            Shoot,
-            Block,
-            Shotgun,
-        }
-         public int ammo = 0;
+        public static Actions CurrentAction { get; set; }
 
-         public Action Reload()
+        public int ammo = 0;
+
+         public Actions Reload()
          {
              ammo++;
-             return Action.Reload;
+             return Actions.Reload;
          }
-         public Action Shoot()
+         public Actions Shoot()
          {
              if (ammo < 1)
              {
                  throw new Exception("User did not have enough ammo!");
              }
              ammo--;
-             return Action.Shoot;
+             return Actions.Shoot;
          }
-         public Action Block()
+         public Actions Block()
          {
-             return Action.Block;
+             return Actions.Block;
          }
-         public Action Shotgun()
+         public Actions Shotgun()
          {
              if (ammo < 3)
              {
                  throw new Exception("User did not have enough ammo!");
              }
-             return Action.Shotgun;
+             return Actions.Shotgun;
          }
 
     }
