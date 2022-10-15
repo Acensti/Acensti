@@ -36,6 +36,7 @@ namespace Shootyshot
         private void btnShot_Click(object sender, EventArgs e)
         {
             Actions userAction = Actions.Shoot;
+            GameView.Items.Add("Player tried just using " + Actions.Shoot.ToString());
             Actions aiAction = ai.AiActions();
             Winner winner = Logic.OngoingActions(userAction, aiAction);
             Endgame(winner);
@@ -62,6 +63,7 @@ namespace Shootyshot
         private void btnBlock_Click(object sender, EventArgs e)
         {
             Actions userAction = Actions.Block;
+            GameView.Items.Add("Player tried just using " + Actions.Block.ToString());
             Actions aiAction = ai.AiActions();
             Winner winner = Logic.OngoingActions(userAction, aiAction);
             Endgame(winner);
@@ -77,19 +79,28 @@ namespace Shootyshot
 
         private void textBoxPlayerAction_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-        
+
 
         private void GameView_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
+        public void GameViewLive()
+        {
+            if (GameView.Items.Count > 12)
+                GameView.Items.Clear();
+            textBoxAmmoComputer.Text = UserAmmo.ToString();
+            txtPAction.Text = CurrentAction.ToString();
+        }
+
         private void btnReload_Click(object sender, EventArgs e)
         {
             Actions userAction = Actions.Reload;
+            GameView.Items.Add("Player just " + Actions.Reload.ToString());
             Actions aiAction = ai.AiActions();
             Winner winner = Logic.OngoingActions(userAction, aiAction);
             Endgame(winner);
@@ -108,14 +119,21 @@ namespace Shootyshot
         private void btnShotgun_Click_1(object sender, EventArgs e)
         {
             Actions userAction = Actions.Shotgun;
+            GameView.Items.Add("Player tried just using " + Actions.Shotgun.ToString());
             Actions aiAction = ai.AiActions();
             Winner winner = Logic.OngoingActions(userAction, aiAction);
             Endgame(winner);
+
         }
 
         private void txtPAmmo_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void BtnRestart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

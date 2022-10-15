@@ -41,6 +41,7 @@
             this.btnReload = new System.Windows.Forms.Button();
             this.txtPAmmo = new System.Windows.Forms.TextBox();
             this.txtPAction = new System.Windows.Forms.TextBox();
+            this.BtnRestart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +81,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 74);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 133);
@@ -95,7 +96,7 @@
             this.PlayerLabel.Location = new System.Drawing.Point(91, 46);
             this.PlayerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PlayerLabel.Name = "PlayerLabel";
-            this.PlayerLabel.Size = new System.Drawing.Size(49, 24);
+            this.PlayerLabel.Size = new System.Drawing.Size(38, 18);
             this.PlayerLabel.TabIndex = 7;
             this.PlayerLabel.Text = "allan";
             // 
@@ -106,7 +107,7 @@
             this.LabelAI.Location = new System.Drawing.Point(947, 46);
             this.LabelAI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelAI.Name = "LabelAI";
-            this.LabelAI.Size = new System.Drawing.Size(27, 24);
+            this.LabelAI.Size = new System.Drawing.Size(20, 18);
             this.LabelAI.TabIndex = 8;
             this.LabelAI.Text = "Ai";
             // 
@@ -122,10 +123,10 @@
             // GameView
             // 
             this.GameView.FormattingEnabled = true;
-            this.GameView.ItemHeight = 24;
-            this.GameView.Location = new System.Drawing.Point(313, 228);
+            this.GameView.ItemHeight = 18;
+            this.GameView.Location = new System.Drawing.Point(301, 202);
             this.GameView.Name = "GameView";
-            this.GameView.Size = new System.Drawing.Size(620, 244);
+            this.GameView.Size = new System.Drawing.Size(620, 238);
             this.GameView.TabIndex = 10;
             this.GameView.SelectedIndexChanged += new System.EventHandler(this.GameView_SelectedIndexChanged);
             // 
@@ -133,14 +134,14 @@
             // 
             this.textBoxAmmoComputer.Location = new System.Drawing.Point(843, 134);
             this.textBoxAmmoComputer.Name = "textBoxAmmoComputer";
-            this.textBoxAmmoComputer.Size = new System.Drawing.Size(100, 29);
+            this.textBoxAmmoComputer.Size = new System.Drawing.Size(100, 24);
             this.textBoxAmmoComputer.TabIndex = 12;
             // 
             // textBoxCompAction
             // 
             this.textBoxCompAction.Location = new System.Drawing.Point(843, 94);
             this.textBoxCompAction.Name = "textBoxCompAction";
-            this.textBoxCompAction.Size = new System.Drawing.Size(100, 29);
+            this.textBoxCompAction.Size = new System.Drawing.Size(100, 24);
             this.textBoxCompAction.TabIndex = 13;
             // 
             // btnReload
@@ -158,7 +159,7 @@
             // 
             this.txtPAmmo.Location = new System.Drawing.Point(215, 154);
             this.txtPAmmo.Name = "txtPAmmo";
-            this.txtPAmmo.Size = new System.Drawing.Size(100, 29);
+            this.txtPAmmo.Size = new System.Drawing.Size(100, 24);
             this.txtPAmmo.TabIndex = 11;
             this.txtPAmmo.TextChanged += new System.EventHandler(this.txtPAmmo_TextChanged);
             // 
@@ -166,15 +167,27 @@
             // 
             this.txtPAction.Location = new System.Drawing.Point(215, 94);
             this.txtPAction.Name = "txtPAction";
-            this.txtPAction.Size = new System.Drawing.Size(100, 29);
+            this.txtPAction.Size = new System.Drawing.Size(100, 24);
             this.txtPAction.TabIndex = 11;
             this.txtPAction.TextChanged += new System.EventHandler(this.textBoxPlayerAction_TextChanged);
             // 
+            // BtnRestart
+            // 
+            this.BtnRestart.Location = new System.Drawing.Point(1034, 568);
+            this.BtnRestart.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRestart.Name = "BtnRestart";
+            this.BtnRestart.Size = new System.Drawing.Size(153, 42);
+            this.BtnRestart.TabIndex = 15;
+            this.BtnRestart.Text = "Restart";
+            this.BtnRestart.UseVisualStyleBackColor = true;
+            this.BtnRestart.Click += new System.EventHandler(this.BtnRestart_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 623);
+            this.Controls.Add(this.BtnRestart);
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.textBoxAmmoComputer);
             this.Controls.Add(this.textBoxCompAction);
@@ -215,6 +228,7 @@
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.TextBox txtPAmmo;
         private System.Windows.Forms.TextBox txtPAction;
+        private System.Windows.Forms.Button BtnRestart;
     }
 }
 

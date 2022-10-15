@@ -20,3 +20,14 @@ C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\obj\Debug\Shootyshot.pdb
 C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\bin\Debug\Shootyshot.exe.config
 C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\bin\Debug\Shootyshot.exe
 C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\bin\Debug\Shootyshot.pdb
+E:\github\tgstation\plugg\Shootyshot\bin\Debug\Shootyshot.exe.config
+E:\github\tgstation\plugg\Shootyshot\bin\Debug\Shootyshot.exe
+E:\github\tgstation\plugg\Shootyshot\bin\Debug\Shootyshot.pdb
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.csproj.AssemblyReference.cache
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.csproj.SuggestedBindingRedirects.cache
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.Form1.resources
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.Properties.Resources.resources
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.csproj.GenerateResource.cache
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.csproj.CoreCompileInputs.cache
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.exe
+E:\github\tgstation\plugg\Shootyshot\obj\Debug\Shootyshot.pdb
