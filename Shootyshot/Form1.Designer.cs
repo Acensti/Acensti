@@ -35,7 +35,7 @@
             this.LabelAI = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GameView = new System.Windows.Forms.ListBox();
-            this.textBoxAmmoComputer = new System.Windows.Forms.TextBox();
+            this.txtaiAmmo = new System.Windows.Forms.TextBox();
             this.btnReload = new System.Windows.Forms.Button();
             this.txtPAmmo = new System.Windows.Forms.TextBox();
             this.BtnRestart = new System.Windows.Forms.Button();
@@ -72,9 +72,10 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 133);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // PlayerLabel
             // 
@@ -104,25 +105,28 @@
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(177, 133);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // GameView
             // 
             this.GameView.FormattingEnabled = true;
             this.GameView.ItemHeight = 24;
-            this.GameView.Location = new System.Drawing.Point(275, 214);
+            this.GameView.Location = new System.Drawing.Point(306, 208);
             this.GameView.Name = "GameView";
             this.GameView.Size = new System.Drawing.Size(620, 292);
             this.GameView.TabIndex = 10;
             this.GameView.SelectedIndexChanged += new System.EventHandler(this.GameView_SelectedIndexChanged);
             // 
-            // textBoxAmmoComputer
+            // txtaiAmmo
             // 
-            this.textBoxAmmoComputer.Location = new System.Drawing.Point(843, 153);
-            this.textBoxAmmoComputer.Name = "textBoxAmmoComputer";
-            this.textBoxAmmoComputer.Size = new System.Drawing.Size(100, 29);
-            this.textBoxAmmoComputer.TabIndex = 12;
+            this.txtaiAmmo.Location = new System.Drawing.Point(843, 153);
+            this.txtaiAmmo.Name = "txtaiAmmo";
+            this.txtaiAmmo.Size = new System.Drawing.Size(100, 29);
+            this.txtaiAmmo.TabIndex = 12;
+            this.txtaiAmmo.TextChanged += new System.EventHandler(this.textBoxAmmoComputer_TextChanged);
             // 
             // btnReload
             // 
@@ -172,7 +176,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 623);
             this.Controls.Add(this.BtnRestart);
             this.Controls.Add(this.btnReload);
-            this.Controls.Add(this.textBoxAmmoComputer);
+            this.Controls.Add(this.txtaiAmmo);
             this.Controls.Add(this.txtPAmmo);
             this.Controls.Add(this.GameView);
             this.Controls.Add(this.pictureBox2);
@@ -203,7 +207,7 @@
         private System.Windows.Forms.Label LabelAI;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ListBox GameView;
-        private System.Windows.Forms.TextBox textBoxAmmoComputer;
+        private System.Windows.Forms.TextBox txtaiAmmo;
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.TextBox txtPAmmo;
         private System.Windows.Forms.Button BtnRestart;

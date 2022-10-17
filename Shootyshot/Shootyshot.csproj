@@ -82,9 +82,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Game class\" />
-    <Folder Include="References\" />
+    <Content Include="pic1.png" />
+    <Content Include="refrence\pic2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

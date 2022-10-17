@@ -30,7 +30,7 @@ namespace Shootyshot
         {
             InitializeComponent();
             txtPAmmo.Text = userChar.ammo.ToString();
-            textBoxAmmoComputer.Text = AIAmmo.ToString();
+            txtaiAmmo.Text = AIAmmo.ToString();
         }
        
  
@@ -110,13 +110,15 @@ namespace Shootyshot
             Winner winner = Logic.OngoingActions(aiAction, userAction);
             EndGame(winner);
             txtPAmmo.Text = userChar.ammo.ToString();
+            txtaiAmmo.Text = ai.AIAmmo.ToString();
+            
         }
 
 
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = Image.FromFile(@"C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\pic1.png");
         }
 
         private void btnShotgun_Click_1(object sender, EventArgs e)
@@ -175,9 +177,36 @@ namespace Shootyshot
 
         private void BtnRestart_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Restarted!");
+            GameView.Items.Clear();
+            userChar.ammo = 0;
+            ai.AIAmmo = 0;
+            aiscore = 0;
+            userscore = 0;
+            ResetGame();
 
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Image = Image.FromFile(@"C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\refrence\pic2.png");
 
+        }
+
+        public void Restart()
+        {
+            ResetGame();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(@"C:\Users\kunge\GITHUB repos\tg1\plugg\Shootyshot\pic1.png");
+
+        }
+
+        private void textBoxAmmoComputer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
