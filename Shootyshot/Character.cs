@@ -10,7 +10,7 @@ namespace Shootyshot
     {
         public static Actions CurrentAction { get; set; }
 
-        public int ammo = 0;
+            public int ammo = 0;
 
          public Actions Reload()
          {

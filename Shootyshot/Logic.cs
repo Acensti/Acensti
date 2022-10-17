@@ -40,10 +40,6 @@ namespace Shootyshot
                 return Winner.Ai;
 
             }
-            if (PlayerAction == Actions.Shotgun && AiChoices == Actions.Shoot)
-            {
-                return Winner.Player;
-            }
 
             if (PlayerAction == Actions.Shoot && AiChoices != Actions.Block)
             {
@@ -61,27 +57,7 @@ namespace Shootyshot
 
 
         }
+       
 
-        public static void Endgame(Winner winner)
-        {
-
-             if (winner == Winner.Player)
-            {
-                MessageBox.Show("You won");
-            }
-           else if (winner == Winner.Ai)
-            {
-                MessageBox.Show("You lost :c");
-            }
-           else
-            {
-                MessageBox.Show("none won :c");
-
-            }
-
-
-
-
-        }
     }
 }

@@ -18,6 +18,7 @@ namespace Shootyshot
        
         public Actions AiActions() //Mechanical choices the ai commits
         {
+
             if (AIAmmo == 3)
             {
                 return Actions.Shotgun;
@@ -47,6 +48,7 @@ namespace Shootyshot
                     case 1:
                         AIAmmo++;
                         return Actions.Reload;
+
                     case 2:
                         return Actions.Block;
                     case 3:
