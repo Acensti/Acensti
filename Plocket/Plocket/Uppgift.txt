@@ -1,0 +1,24 @@
+﻿
+Uppgiften handlar om att skapa en databas med möjlighet att lagra annonser (liknande
+Blocket). All information skall sparas i en databas som du själv skapar. Det betyder att
+applikationen skall kunna läsa och skriva från denna databas. Gränssnittet till applikationen
+skall skapas i Windows Forms. Krav för att uppgiften skall bli godkänd:
+- Följande information skall kunna registreras och sparas i databasen för en annons, titel,
+beskrivning, pris och kategori (typ av annons).
+- Det skall gå att ange vilken kategori av annons det är. Exempel på kategorier kan vara
+Möbler, Mobiltelefoner, Cyklar, Datorer (titta på tex Blocket för exempel). Giltiga
+värden skall vara lagrade i en egen tabell i databasen.
+- Det skall gå att skapa ett användarkonto och logga in med detta konto. Är man inte
+inloggad skall det bara gå att söka på och läsa annonser.
+- Det skall gå att spara en ny annons i databasen men också att uppdatera en annons
+som redan finns. Det skall gå att ta bort en annons och den skall då försvinna från
+databasen. Att skapa annonser skall bara gå om man är inloggad och bara den
+användare som skapat en annons skall kunna uppdatera eller ta bort den.
+- Det skall gå att söka på annons på titel och kategori . Sökningen skall fungera som ett
+urval. Man skall kunna fylla i en eller flera av dessa värden och få träffar på de
+annonser som matchar sökvillkoret.
+- Sökresultatet skall visas i en lista. Från listan skall det gå att klicka på en rad och få
+upp all information om det annonsen. Listan skall kunna sorteras på pris och på datum.
+- Lösningen måste göras objektorienterat. Koden skall fungera och applikationen skall
+gå att köra utan fel. Vill man ha mer utmaning går det bra att lägga till mer
+funktionalitet från Blocket tex skicka meddelanden mellan olika användare (inget krav

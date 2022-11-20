@@ -1,0 +1,11 @@
+C:\Users\kunge\source\repos\Plocket\Plocket\bin\Debug\Plocket.exe.config
+C:\Users\kunge\source\repos\Plocket\Plocket\bin\Debug\Plocket.exe
+C:\Users\kunge\source\repos\Plocket\Plocket\bin\Debug\Plocket.pdb
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.csproj.AssemblyReference.cache
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.csproj.SuggestedBindingRedirects.cache
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.Form1.resources
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.Properties.Resources.resources
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.csproj.GenerateResource.cache
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.csproj.CoreCompileInputs.cache
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.exe
+C:\Users\kunge\source\repos\Plocket\Plocket\obj\Debug\Plocket.pdb
