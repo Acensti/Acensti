@@ -6,7 +6,7 @@
 
 - 🌱 I’m currently learning **Devops**
 
-- 👯 I’m looking to collaborate on [Hippiestation](https://github.com/HippieStation/HippieMerchant-13)
+- 👯 I’m currently handling [Hippiestation](https://github.com/HippieStation/HippieMerchant-13)
 
 - 📫 How to reach me **Acensti@gmail.com**
 
