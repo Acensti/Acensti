@@ -1,23 +1,26 @@
+<h1 align="center">Hi 👋, I'm Acensti</h1>
+<h3 align="center">A passionate Fullstack developer from sweden</h3>
 
-Game Development Projects
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=acensti&label=Profile%20views&color=0e75b6&style=flat" alt="acensti" /> </p>
 
-This GitHub repository contains various shooter games and mini-projects that I created when I first started learning to code. As I continued to improve my skills, I also worked on developing different types of games and contributing code to game communities. This led me to dive into heavy game changes and network management on top of SQL handling.
-Projects
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=acensti" alt="acensti" /></a> </p>
 
-Here's an overview of the different projects included in this repository:
+- 🌱 I’m currently learning **Devops**
 
-    shooter games: These small games are built using basic game mechanics, such as simple turn based combat and score system, and are designed to help beginners learn the fundamentals of game development.
+- 👯 I’m looking to collaborate on [Hippiestation](https://github.com/HippieStation/HippieMerchant-13)
 
-    Through my other projects there are other Multiplayer game projects: As I became more confident with development, I started to work on multiplayer games that involved managing network connections and server-side databases. These projects were much more complex and required a deeper understanding of programming concepts.
+- 📫 How to reach me **Acensti@gmail.com**
 
-Contributions
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://discord.gg/Legit Goated#1440" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="Legit Goated#1440" height="30" width="40" /></a>
+</p>
 
-Throughout my journey as a developer, I've also contributed to various game communities by sharing my code and helping others with their projects. Some of the contributions that I've made include:
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
 
-    Game engine development: I've contributed to open-source game engines like Unity and Unreal, helping to improve their functionality and add new features.
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=acensti&show_icons=true&locale=en&layout=compact" alt="acensti" /></p>
 
-    Online game communities: I've contributed to various online game communities by sharing my code and helping others with their projects. This has involved everything from bug fixing to creating new game modes and features.
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=acensti&show_icons=true&locale=en" alt="acensti" /></p>
 
-Conclusion
-
-Overall, this repository contains a wide range of game development projects and contributions that showcase my growth as a developer. Whether you're just starting out or you're an experienced programmer, I hope that you find something here that inspires you to create your own games and contribute to the game development community.
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=acensti&" alt="acensti" /></p>
