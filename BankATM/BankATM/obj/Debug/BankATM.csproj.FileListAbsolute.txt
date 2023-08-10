@@ -1,0 +1,8 @@
+C:\Users\Allan\source\repos\BankATM\BankATM\obj\Debug\BankATM.csproj.AssemblyReference.cache
+C:\Users\Allan\source\repos\BankATM\BankATM\obj\Debug\BankATM.csproj.SuggestedBindingRedirects.cache
+C:\Users\Allan\source\repos\BankATM\BankATM\obj\Debug\BankATM.csproj.CoreCompileInputs.cache
+C:\Users\Allan\source\repos\BankATM\BankATM\bin\Debug\BankATM.exe.config
+C:\Users\Allan\source\repos\BankATM\BankATM\bin\Debug\BankATM.exe
+C:\Users\Allan\source\repos\BankATM\BankATM\bin\Debug\BankATM.pdb
+C:\Users\Allan\source\repos\BankATM\BankATM\obj\Debug\BankATM.exe
+C:\Users\Allan\source\repos\BankATM\BankATM\obj\Debug\BankATM.pdb
