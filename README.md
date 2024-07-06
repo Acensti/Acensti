@@ -4,7 +4,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=acensti" alt="acensti" /></a> </p>
 
-- 🌱 I’m currently learning **Devops**
+- 🌱 I’m currently learning **C++**
 
 - 👯 I’m currently handling [Hippiestation](https://github.com/HippieStation/HippieMerchant-13)
 
